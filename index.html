@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e87f1098b0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="nav">
+        <img src="Images/logo.jpg" alt="logo" class="logo">
+        <ul>
+            <li><a href="#back">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleSidebar()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+        <div class="close-btn" onclick="toggleSidebar()">&times;</div>
+        <div class="sidebar-content">
+            <a href="#back" onclick="toggleSidebar()">Home</a>
+            <a href="#about" onclick="toggleSidebar()">About</a>
+            <a href="#services" onclick="toggleSidebar()">Services</a>
+            <a href="#portfolio" onclick="toggleSidebar()">Projects</a>
+            <a href="#contact" onclick="toggleSidebar()">Contact</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="back" id="back">
+            <div class="container">
+                <div class="img"></div>
+                <div class="para">
+                    <p class="role">Software Developer</p>
+                    <h1 class="heading"></h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="about" id="about">
+            <div class="wind">
+                <div class="col1">
+                    <img src="Images/background.png" alt="about image">
+                </div>
+                <div class="col2">
+                    <h1 class="heading2">About me</h1>
+                    <p class="para2">I am a passionate software developer with expertise in full-stack development,
+                        mobile app development, and machine learning. I love creating innovative solutions and
+                        continuously learning new technologies.</p>
+                    <div class="tabs">
+                        <div class="tab active-link" onclick="opentab('skills')">Skills</div>
+                        <div class="tab" onclick="opentab('education')">Education</div>
+                        <div class="tab" onclick="opentab('experience')">Experience</div>
+                    </div>
+                    <div class="tabcontents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span>Built full-stack apps using React, Next.js, Node.js,
+                                Express, and Tailwind CSS. Experienced in both SQL and MongoDB.</li>
+                            <li><span>Backend Logic</span>Developed RESTful APIs, implemented authentication, and
+                                managed routing using Express.js with raw SQL and NoSQL databases.</li>
+                            <li><span>Mobile Apps</span>Created mobile applications using React Native, integrating
+                                backend APIs for real-time operations like complaint tracking and report generation.
+                            </li>
+                            <li><span>Database Skills</span>Skilled in relational (MySQL) and non-relational (MongoDB)
+                                databases. Experienced with joins, constraints, and complex queries.</li>
+                            <li><span>AI & ML Basics</span>Worked on projects involving CNNs, Bayesian Networks, and
+                                Genetic Algorithms using Python and machine learning libraries.</li>
+                        </ul>
+                    </div>
+                    <div class="tabcontents" id="education">
+                        <ul>
+                            <li><span>Bachelor of Science in Computer Science</span>FAST - National University of
+                                Computer and Emerging Sciences<br>Expected Graduation: May 2026<br>CGPA: 3.69</li>
+                            <li><span>Intermediate (Pre-Engineering)</span>Adamjee Government Science
+                                College<br>Completed: 2022<br>Percentage: 90.26%</li>
+                            <li><span>Matriculation (Science)</span>Happy Home High School<br>Completed:
+                                2020<br>Percentage: 93.43%</li>
+                        </ul>
+                    </div>
+                    <div class="tabcontents" id="experience">
+                        <ul>
+                            <li><span>Software Developer Intern</span>
+                                <ul class="bullet">
+                                    <li>The Dawood Foundation (Karachi) - June 2024 - August 2024</li>
+                                    <li>Developed a MERN stack-based Complaint Management App</li>
+                                    <li>Built RESTful APIs using Express.js for reporting exhibit issues</li>
+                                    <li>Enabled real-time technician notifications and task resolution</li>
+                                    <li>Generated monthly reports on common issues and resolution times</li>
+                                </ul>
+                            </li>
+                            <li><span>Student Lab Assistant</span>
+                                <ul class="bullet">
+                                    <li>FAST-NUCES (Karachi) - Feb 2025 - May 2025</li>
+                                    <li>Assisted students in the "Python for Business" course</li>
+                                    <li>Helped debug code and explained programming concepts during lab sessions</li>
+                                </ul>
+                            </li>
+                            <li><span>Science Communicator</span>
+                                <ul class="bullet">
+                                    <li>Magnifi Science Center (Karachi) - June 2023 - August 2023</li>
+                                    <li>Explained scientific concepts to visitors using interactive exhibits</li>
+                                    <li>Improved public speaking and science communication skills</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="services" id="services">
+            <div class="container3">
+                <h1 class="heading3">My Services</h1>
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <div class="service-type">
+                            <div class="service-icon">🌐</div>
+                            <h1>Web Development</h1>
+                            <p>I build responsive, full-stack web applications using technologies like React, Next.js,
+                                Node.js, and Express. I can help you launch fast, modern, and scalable web solutions.
+                            </p>
+                        </div>
+                        <div class="service-type">
+                            <div class="service-icon">📱</div>
+                            <h1>Mobile App Development</h1>
+                            <p>I develop cross-platform mobile apps using React Native with backend integration (REST
+                                APIs). Ideal for startups and organizations looking for quick, real-world app solutions.
+                            </p>
+                        </div>
+                        <div class="service-type">
+                            <div class="service-icon">⚙️</div>
+                            <h1>Backend API Development</h1>
+                            <p>I design and implement clean, secure RESTful APIs with Node.js and Express, using both
+                                SQL (MySQL) and NoSQL (MongoDB) databases.</p>
+                        </div>
+                        <div class="service-type">
+                            <div class="service-icon">🤖</div>
+                            <h1>AI/Machine Learning Prototypes</h1>
+                            <p>Need a basic AI model or ML proof-of-concept? I can build Python-based solutions using
+                                techniques like classification, CNNs, and Bayesian networks.</p>
+                        </div>
+                        <div class="service-type">
+                            <div class="service-icon">🗄️</div>
+                            <h1>Database Design & Optimization</h1>
+                            <p>I offer database schema design, query optimization, and integration services using MySQL
+                                or MongoDB to ensure your data is fast and reliable.</p>
+                        </div>
+                        <div class="service-type">
+                            <div class="service-icon">🔧</div>
+                            <h1>Bug Fixing & Code Debugging</h1>
+                            <p>Facing errors in your web/mobile app? I can helpdebug and fix issues quickly—especially
+                                in JavaScript, React, Node.js, or Python-based projects.</p>
+                        </div>
+                        <!-- Duplicate set for seamless loop -->
+                        <div class="service-type">
+                            <div class="service-icon">🌐</div>
+                            <h1>Web Development</h1>
+                            <p>I build responsive, full-stack web applications using technologies like React, Next.js,
+                                Node.js, and Express. I can help you launch fast, modern, and scalable web solutions.
+                            </p>
+                        </div>
+                        <div class="service-type">
+                            <div class="service-icon">📱</div>
+                            <2>Mobile App Development</h1>
+                                <p>I develop cross-platform mobile apps using React Native with backend integration
+                                    (REST APIs). Ideal for startups and organizations looking for quick, real-world app
+                                    solutions.</p>
+                        </div>
+                        <div class="service-type">
+                            <div class="service-icon">⚙️</div>
+                            <h1>Backend API Development</h1>
+                            <p>I design and implement clean, secure RESTful APIs with Node.js and Express, using both
+                                SQL (MySQL) and NoSQL (MongoDB) databases.</p>
+                        </div>
+                        <div class="service-type">
+                            <div class="service-icon">🤖</div>
+                            <h1>AI/Machine Learning Prototypes</h1>
+                            <p>Need a basic AI model or ML proof-of-concept? I can build Python-based solutions using
+                                techniques like classification, CNNs, and Bayesian networks.</p>
+                        </div>
+                        <div class="service-type">
+                            <div class="service-icon">🗄️</div>
+                            <h1>Database Design & Optimization</h1>
+                            <p>I offer database schema design, query optimization, and integration services using MySQL
+                                or MongoDB to ensure your data is fast and reliable.</p>
+                        </div>
+                        <div class="service-type">
+                            <div class="service-icon">🔧</div>
+                            <h1>Bug Fixing & Code Debugging</h1>
+                            <p>Facing errors in your web/mobile app? I can help debug and fix issues quickly—especially
+                                in JavaScript, React, Node.js, or Python-based projects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio" id="portfolio">
+            <div class="container">
+                <h1 class="heading3">My Projects</h1>
+                <div class="work">
+                    <div class="working">
+                        <div class="img_div">
+                            <img src="Images/project1.png" alt="Project 1">
+                            <div class="layer">
+                                <h1>Complaint Management System (Scifix)</h1>
+                                <p>A comprehensive MERN stack application for managing and tracking complaints with
+                                    real-time notifications and reporting features.</p>
+                                <a href="#">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="working">
+                        <div class="img_div2">
+                            <img src="Images/temp.jpg" alt="Project 2">
+                            <div class="layer">
+                                <h1>Property Management System (NextAura)</h1>
+                                <p>A modern property management system built with Next.js featuring property listings,
+                                    tenant management, and financial tracking.</p>
+                                <a href="#">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="working">
+                        <div class="img_div">
+                            <img src="Images/project3.png" alt="Project 3">
+                            <div class="layer">
+                                <h1>Network Load Balancer</h1>
+                                <p>A high-performance load balancer implementation designed to distribute network
+                                    traffic efficiently across multiple servers.</p>
+                                <a href="#">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact" id="contact">
+            <div class="container4">
+
+                <div class="row">
+                    <div class="left">
+                        <h1 class="heading4">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> pc16773.abdullah@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> +92 314 4462668</p>
+                        <div class="icons">
+                            <a href="https://www.facebook.com/share/1YJXQDDoCz/" class="fb"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/abdullah_great8?igsh=MWhmY2hvcDh1NjhxNA==" class="insta"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/ahmed-abdullah8" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="/files/Resume.pdf" download class="btn20">Download Resume</a>
+                    </div>
+                    <div class="right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" placeholder="Enter your Name" name="name" required>
+                            <input type="email" name="email" placeholder="Enter Your Email" required>
+                            <textarea name="message" rows="6" placeholder="Enter Your message"></textarea>
+                            <button class="btn btn2" type="submit">Submit</button>
+                            <span class="submit"></span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+</body>
+
+</html>
