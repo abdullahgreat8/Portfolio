@@ -775,6 +775,7 @@ html{
 
      .left p {
          margin-left: 0px;
+         width: fit-content;
      }
 
      .icons {
